@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .game-shadow {
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+            }
+            .grid-board {
+                background-size: 20px 20px;
+                background-image:
+                    linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+            }
+            .btn-hover {
+                @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-dark to-slate-800 min-h-screen flex flex-col items-center justify-center text-light font-sans">
+    <div class="max-w-6xl w-full mx-auto p-4">
+        <header class="text-center mb-8">
+            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent mb-2">Tetris</h1>
+            <p class="text-slate-300 text-lg">经典俄罗斯方块游戏与AI算法对决</p>
+        </header>
+
+        <div class="flex flex-col lg:flex-row gap-8 justify-center items-center">
+            <!-- 游戏区域 -->
+            <div class="relative">
+                <div class="game-shadow rounded-lg overflow-hidden bg-slate-900 border-2 border-primary/30">
+                    <canvas id="tetris" class="grid-board"></canvas>
+                </div>
+
+                <!-- 游戏控制和状态 -->
+                <div class="mt-4 flex flex-col md:flex-row gap-4 justify-center">
+                    <div class="bg-slate-800/80 p-4 rounded-lg border border-slate-700">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-slate-300">得分</span>
+                            <span id="score" class="text-xl font-bold text-accent">0</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-300">行数</span>
+                            <span id="lines" class="text-xl font-bold text-secondary">0</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800/80 p-4 rounded-lg border border-slate-700">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-slate-300">等级</span>
+                            <span id="level" class="text-xl font-bold text-primary">1</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-slate-300">速度</span>
+                            <span id="speed" class="text-xl font-bold text-primary">1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 游戏信息和控制区 -->
+            <div class="w-full max-w-md">
+                <div class="bg-slate-800/80 p-6 rounded-lg border border-slate-700 mb-6">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fa fa-gamepad mr-2 text-primary"></i> 游戏模式
+                    </h2>
+
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center">
+                            <div id="human-mode" class="mode-btn flex items-center justify-center w-12 h-12 rounded-full bg-primary/20 border-2 border-primary cursor-pointer btn-hover">
+                                <i class="fa fa-user text-xl text-primary"></i>
+                            </div>
+                            <span class="ml-3 text-lg">人类玩家</span>
+                        </div>
+
+                        <div class="relative">
+                            <div class="w-16 h-8 bg-slate-700 rounded-full flex items-center px-1 cursor-pointer transition-colors duration-300" id="mode-toggle">
+                                <div class="toggle-dot w-6 h-6 bg-white rounded-full transition-transform duration-300 transform translate-x-0" id="toggle-dot"></div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <span class="mr-3 text-lg">AI玩家</span>
+                            <div id="ai-mode" class="mode-btn flex items-center justify-center w-12 h-12 rounded-full bg-slate-700 border-2 border-slate-600 cursor-pointer btn-hover">
+                                <i class="fa fa-robot text-xl text-slate-500"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="connection-status" class="py-3 px-4 rounded bg-red-500/20 border border-red-500/40 text-red-300 mb-4 hidden">
+                        <i class="fa fa-exclamation-circle mr-2"></i>
+                        <span>AI服务器未连接</span>
+                    </div>
+
+                    <div id="ai-status" class="py-3 px-4 rounded bg-blue-500/20 border border-blue-500/40 text-blue-300 mb-4 hidden">
+                        <i class="fa fa-spinner fa-spin mr-2"></i>
+                        <span>AI正在思考...</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/80 p-6 rounded-lg border border-slate-700 mb-6">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fa fa-info-circle mr-2 text-accent"></i> 游戏控制
+                    </h2>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded bg-slate-700 flex items-center justify-center mr-2">
+                                <i class="fa fa-arrow-left"></i>
+                            </div>
+                            <span>左移</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded bg-slate-700 flex items-center justify-center mr-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <span>右移</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded bg-slate-700 flex items-center justify-center mr-2">
+                                <i class="fa fa-arrow-up"></i>
+                            </div>
+                            <span>旋转</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded bg-slate-700 flex items-center justify-center mr-2">
+                                <i class="fa fa-arrow-down"></i>
+                            </div>
+                            <span>加速下落</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded bg-slate-700 flex items-center justify-center mr-2">
+                                <i class="fa fa-space-shuttle"></i>
+                            </div>
+                            <span>空格键：直接落下</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded bg-slate-700 flex items-center justify-center mr-2">
+                                <i class="fa fa-pause"></i>
+                            </div>
+                            <span>P键：暂停游戏</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-3">
+                    <button id="start-button" class="flex-1 py-3 px-4 bg-primary hover:bg-primary/90 rounded-lg font-medium btn-hover">
+                        <i class="fa fa-play mr-2"></i> 开始游戏
+                    </button>
+                    <button id="pause-button" class="flex-1 py-3 px-4 bg-slate-700 hover:bg-slate-600 rounded-lg font-medium btn-hover" disabled>
+                        <i class="fa fa-pause mr-2"></i> 暂停游戏
+                    </button>
+                    <button id="restart-button" class="flex-1 py-3 px-4 bg-accent hover:bg-accent/90 rounded-lg font-medium btn-hover">
+                        <i class="fa fa-refresh mr-2"></i> 重新开始
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-12 text-center text-slate-500 text-sm">
+            <p>© 2025 Tetris Game - 三人小组项目</p>
+        </footer>
+    </div>
+
+    <script src="/static/tetris.js"></script>
+</body>
+</html>

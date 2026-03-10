@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录与注册</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-black-password {
+                color: #000000;
+            }
+        }
+    </style>
+    <style>
+        body {
+            background-color: #1F2937;
+            color: white;
+            font-family: 'Inter', 'system-ui', 'sans-serif';
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
+    <div id="login" class="bg-slate-800 p-8 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold mb-4">登录</h2>
+        <form id="login-form">
+            <div class="mb-4">
+                <label for="login-username" class="block text-sm font-medium text-gray-300">用户名</label>
+                <input type="text" id="login-username" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm text-black">
+            </div>
+            <div class="mb-6">
+                <label for="login-password" class="block text-sm font-medium text-gray-300">密码</label>
+                <input type="password" id="login-password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm text-black-password">
+            </div>
+            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary/90">登录</button>
+        </form>
+        <p class="mt-4 text-center text-gray-400">还没有账号？<a href="#" id="register-link" class="text-primary hover:underline">注册</a></p>
+    </div>
+
+    <div id="register" class="bg-slate-800 p-8 rounded-lg shadow-md hidden">
+        <h2 class="text-2xl font-bold mb-4">注册</h2>
+        <form id="register-form">
+            <div class="mb-4">
+                <label for="register-username" class="block text-sm font-medium text-gray-300">用户名</label>
+                <input type="text" id="register-username" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm text-black">
+            </div>
+            <div class="mb-6">
+                <label for="register-password" class="block text-sm font-medium text-gray-300">密码</label>
+                <input type="password" id="register-password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm text-black-password">
+            </div>
+            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary hover:bg-primary/90">注册</button>
+        </form>
+        <p class="mt-4 text-center text-gray-400">已有账号？<a href="#" id="login-link" class="text-primary hover:underline">登录</a></p>
+    </div>
+
+    <!-- 登录成功弹窗 -->
+    <div id="login-success-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+    <div class="bg-gray-800 rounded-xl p-8 max-w-md w-full mx-4 transform transition-all">
+      <div class="text-center">
+        <div class="text-4xl text-yellow-400 mb-4 animate-pulse">
+          <i class="fa fa-crown"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-2">游戏中心提醒</h3>
+        <p class="text-gray-300 mb-6">努力坐上龙椅，成为方块世界的统治者！</p>
+        <button id="close-modal" class="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-6 rounded-full transition-colors shadow-lg hover:shadow-primary/30">
+          开始挑战
+        </button>
+      </div>
+    </div>
+    </div>
+
+    <script>
+        const loginDiv = document.getElementById('login');
+        const registerDiv = document.getElementById('register');
+        const registerLink = document.getElementById('register-link');
+        const loginLink = document.getElementById('login-link');
+
+        registerLink.addEventListener('click', () => {
+            loginDiv.classList.add('hidden');
+            registerDiv.classList.remove('hidden');
+        });
+
+        loginLink.addEventListener('click', () => {
+            registerDiv.classList.add('hidden');
+            loginDiv.classList.remove('hidden');
+        });
+
+        const loginForm = document.getElementById('login-form');
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+            const response = await fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password })
+            });
+            const data = await response.json();
+            if (response.ok) {
+                localStorage.setItem('user_id', data.user_id);
+                const loginSuccessModal = document.getElementById('login-success-modal');
+                loginSuccessModal.classList.remove('hidden');
+
+                // 为“开始挑战”按钮添加点击事件
+                const closeModalButton = document.getElementById('close-modal');
+                closeModalButton.addEventListener('click', () => {
+                    // 隐藏弹窗
+                    loginSuccessModal.classList.add('hidden');
+                    // 跳转到排行榜界面
+                    window.location.href = '/leaderboard_page';
+                });
+            } else {
+                alert(data.message);
+            }
+        });
+
+        const registerForm = document.getElementById('register-form');
+        registerForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const username = document.getElementById('register-username').value;
+            const password = document.getElementById('register-password').value;
+            const response = await fetch('/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password })
+            });
+            const data = await response.json();
+            alert(data.message);
+            if (response.ok) {
+                registerDiv.classList.add('hidden');
+                loginDiv.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

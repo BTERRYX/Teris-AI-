@@ -1,0 +1,1845 @@
+{
+  "test_config": {
+    "total_games": 200,
+    "max_workers": 12,
+    "test_time": 526.9707224369049,
+    "model_file": "best_genetic_agent.json"
+  },
+  "results": [
+    {
+      "game_id": 6,
+      "seed": 234054,
+      "lines_cleared": 52,
+      "pieces_placed": 157,
+      "elapsed_time": 1.3452174663543701,
+      "efficiency": 0.33121019108280253,
+      "timeout": false
+    },
+    {
+      "game_id": 1,
+      "seed": 116740,
+      "lines_cleared": 124,
+      "pieces_placed": 340,
+      "elapsed_time": 3.1878345012664795,
+      "efficiency": 0.36470588235294116,
+      "timeout": false
+    },
+    {
+      "game_id": 8,
+      "seed": 772247,
+      "lines_cleared": 250,
+      "pieces_placed": 656,
+      "elapsed_time": 5.945461988449097,
+      "efficiency": 0.38109756097560976,
+      "timeout": false
+    },
+    {
+      "game_id": 10,
+      "seed": 709571,
+      "lines_cleared": 337,
+      "pieces_placed": 875,
+      "elapsed_time": 8.197150707244873,
+      "efficiency": 0.3851428571428571,
+      "timeout": false
+    },
+    {
+      "game_id": 2,
+      "seed": 26226,
+      "lines_cleared": 499,
+      "pieces_placed": 1279,
+      "elapsed_time": 12.180718183517456,
+      "efficiency": 0.39014855355746675,
+      "timeout": false
+    },
+    {
+      "game_id": 14,
+      "seed": 91162,
+      "lines_cleared": 423,
+      "pieces_placed": 1092,
+      "elapsed_time": 10.452816247940063,
+      "efficiency": 0.3873626373626374,
+      "timeout": false
+    },
+    {
+      "game_id": 7,
+      "seed": 146317,
+      "lines_cleared": 705,
+      "pieces_placed": 1794,
+      "elapsed_time": 16.909340143203735,
+      "efficiency": 0.39297658862876256,
+      "timeout": false
+    },
+    {
+      "game_id": 16,
+      "seed": 442418,
+      "lines_cleared": 208,
+      "pieces_placed": 553,
+      "elapsed_time": 5.134969234466553,
+      "efficiency": 0.37613019891500904,
+      "timeout": false
+    },
+    {
+      "game_id": 13,
+      "seed": 571859,
+      "lines_cleared": 640,
+      "pieces_placed": 1624,
+      "elapsed_time": 15.53369688987732,
+      "efficiency": 0.39408866995073893,
+      "timeout": false
+    },
+    {
+      "game_id": 15,
+      "seed": 619177,
+      "lines_cleared": 643,
+      "pieces_placed": 1635,
+      "elapsed_time": 15.93076467514038,
+      "efficiency": 0.39327217125382263,
+      "timeout": false
+    },
+    {
+      "game_id": 18,
+      "seed": 31245,
+      "lines_cleared": 464,
+      "pieces_placed": 1192,
+      "elapsed_time": 11.197110176086426,
+      "efficiency": 0.38926174496644295,
+      "timeout": false
+    },
+    {
+      "game_id": 4,
+      "seed": 288390,
+      "lines_cleared": 1290,
+      "pieces_placed": 3261,
+      "elapsed_time": 31.094159603118896,
+      "efficiency": 0.39558417663293466,
+      "timeout": false
+    },
+    {
+      "game_id": 19,
+      "seed": 98247,
+      "lines_cleared": 602,
+      "pieces_placed": 1533,
+      "elapsed_time": 14.486455202102661,
+      "efficiency": 0.3926940639269406,
+      "timeout": false
+    },
+    {
+      "game_id": 23,
+      "seed": 631263,
+      "lines_cleared": 28,
+      "pieces_placed": 98,
+      "elapsed_time": 0.9195067882537842,
+      "efficiency": 0.2857142857142857,
+      "timeout": false
+    },
+    {
+      "game_id": 24,
+      "seed": 27825,
+      "lines_cleared": 163,
+      "pieces_placed": 436,
+      "elapsed_time": 4.04626202583313,
+      "efficiency": 0.3738532110091743,
+      "timeout": false
+    },
+    {
+      "game_id": 11,
+      "seed": 776647,
+      "lines_cleared": 1552,
+      "pieces_placed": 3918,
+      "elapsed_time": 36.05251097679138,
+      "efficiency": 0.3961204696273609,
+      "timeout": false
+    },
+    {
+      "game_id": 9,
+      "seed": 107474,
+      "lines_cleared": 1527,
+      "pieces_placed": 3845,
+      "elapsed_time": 36.94675397872925,
+      "efficiency": 0.39713914174252274,
+      "timeout": false
+    },
+    {
+      "game_id": 5,
+      "seed": 256788,
+      "lines_cleared": 1585,
+      "pieces_placed": 3997,
+      "elapsed_time": 38.13458585739136,
+      "efficiency": 0.3965474105579184,
+      "timeout": false
+    },
+    {
+      "game_id": 3,
+      "seed": 777573,
+      "lines_cleared": 1663,
+      "pieces_placed": 4194,
+      "elapsed_time": 39.21119213104248,
+      "efficiency": 0.3965188364329995,
+      "timeout": false
+    },
+    {
+      "game_id": 21,
+      "seed": 243963,
+      "lines_cleared": 775,
+      "pieces_placed": 1968,
+      "elapsed_time": 18.792434692382812,
+      "efficiency": 0.3938008130081301,
+      "timeout": false
+    },
+    {
+      "game_id": 30,
+      "seed": 571413,
+      "lines_cleared": 248,
+      "pieces_placed": 658,
+      "elapsed_time": 6.145909309387207,
+      "efficiency": 0.3768996960486322,
+      "timeout": false
+    },
+    {
+      "game_id": 29,
+      "seed": 735393,
+      "lines_cleared": 476,
+      "pieces_placed": 1222,
+      "elapsed_time": 11.301936149597168,
+      "efficiency": 0.3895253682487725,
+      "timeout": false
+    },
+    {
+      "game_id": 26,
+      "seed": 208497,
+      "lines_cleared": 776,
+      "pieces_placed": 1974,
+      "elapsed_time": 18.903301239013672,
+      "efficiency": 0.39311043566362713,
+      "timeout": false
+    },
+    {
+      "game_id": 0,
+      "seed": 670488,
+      "lines_cleared": 2312,
+      "pieces_placed": 5813,
+      "elapsed_time": 55.08461666107178,
+      "efficiency": 0.3977292275933253,
+      "timeout": false
+    },
+    {
+      "game_id": 17,
+      "seed": 33327,
+      "lines_cleared": 1746,
+      "pieces_placed": 4403,
+      "elapsed_time": 41.24964356422424,
+      "efficiency": 0.3965478083125142,
+      "timeout": false
+    },
+    {
+      "game_id": 36,
+      "seed": 848750,
+      "lines_cleared": 43,
+      "pieces_placed": 139,
+      "elapsed_time": 1.283623456954956,
+      "efficiency": 0.30935251798561153,
+      "timeout": false
+    },
+    {
+      "game_id": 25,
+      "seed": 588509,
+      "lines_cleared": 1157,
+      "pieces_placed": 2921,
+      "elapsed_time": 27.63080358505249,
+      "efficiency": 0.3960972269770627,
+      "timeout": false
+    },
+    {
+      "game_id": 32,
+      "seed": 231149,
+      "lines_cleared": 647,
+      "pieces_placed": 1657,
+      "elapsed_time": 15.283718347549438,
+      "efficiency": 0.3904646952323476,
+      "timeout": false
+    },
+    {
+      "game_id": 22,
+      "seed": 529904,
+      "lines_cleared": 1397,
+      "pieces_placed": 3535,
+      "elapsed_time": 32.90991950035095,
+      "efficiency": 0.39519094766619517,
+      "timeout": false
+    },
+    {
+      "game_id": 20,
+      "seed": 229259,
+      "lines_cleared": 1777,
+      "pieces_placed": 4473,
+      "elapsed_time": 42.770554542541504,
+      "efficiency": 0.39727252403308744,
+      "timeout": false
+    },
+    {
+      "game_id": 12,
+      "seed": 935519,
+      "lines_cleared": 2532,
+      "pieces_placed": 6366,
+      "elapsed_time": 60.343466997146606,
+      "efficiency": 0.3977379830348728,
+      "timeout": false
+    },
+    {
+      "game_id": 40,
+      "seed": 844963,
+      "lines_cleared": 268,
+      "pieces_placed": 705,
+      "elapsed_time": 6.640681266784668,
+      "efficiency": 0.3801418439716312,
+      "timeout": false
+    },
+    {
+      "game_id": 35,
+      "seed": 291705,
+      "lines_cleared": 590,
+      "pieces_placed": 1503,
+      "elapsed_time": 14.35896110534668,
+      "efficiency": 0.3925482368596141,
+      "timeout": false
+    },
+    {
+      "game_id": 37,
+      "seed": 911528,
+      "lines_cleared": 630,
+      "pieces_placed": 1605,
+      "elapsed_time": 14.780878782272339,
+      "efficiency": 0.3925233644859813,
+      "timeout": false
+    },
+    {
+      "game_id": 27,
+      "seed": 750801,
+      "lines_cleared": 1590,
+      "pieces_placed": 4011,
+      "elapsed_time": 38.142924308776855,
+      "efficiency": 0.39640987284966345,
+      "timeout": false
+    },
+    {
+      "game_id": 38,
+      "seed": 6815,
+      "lines_cleared": 670,
+      "pieces_placed": 1708,
+      "elapsed_time": 16.4282968044281,
+      "efficiency": 0.39227166276346603,
+      "timeout": false
+    },
+    {
+      "game_id": 41,
+      "seed": 167415,
+      "lines_cleared": 652,
+      "pieces_placed": 1666,
+      "elapsed_time": 15.651143312454224,
+      "efficiency": 0.39135654261704683,
+      "timeout": false
+    },
+    {
+      "game_id": 39,
+      "seed": 795668,
+      "lines_cleared": 870,
+      "pieces_placed": 2205,
+      "elapsed_time": 20.51553702354431,
+      "efficiency": 0.3945578231292517,
+      "timeout": false
+    },
+    {
+      "game_id": 46,
+      "seed": 163033,
+      "lines_cleared": 284,
+      "pieces_placed": 740,
+      "elapsed_time": 7.1145851612091064,
+      "efficiency": 0.3837837837837838,
+      "timeout": false
+    },
+    {
+      "game_id": 34,
+      "seed": 617890,
+      "lines_cleared": 1101,
+      "pieces_placed": 2783,
+      "elapsed_time": 26.719096899032593,
+      "efficiency": 0.39561624146604385,
+      "timeout": false
+    },
+    {
+      "game_id": 50,
+      "seed": 107176,
+      "lines_cleared": 171,
+      "pieces_placed": 465,
+      "elapsed_time": 4.318758487701416,
+      "efficiency": 0.36774193548387096,
+      "timeout": false
+    },
+    {
+      "game_id": 43,
+      "seed": 443144,
+      "lines_cleared": 889,
+      "pieces_placed": 2259,
+      "elapsed_time": 21.246602296829224,
+      "efficiency": 0.3935369632580788,
+      "timeout": false
+    },
+    {
+      "game_id": 44,
+      "seed": 356779,
+      "lines_cleared": 816,
+      "pieces_placed": 2078,
+      "elapsed_time": 19.766854763031006,
+      "efficiency": 0.39268527430221367,
+      "timeout": false
+    },
+    {
+      "game_id": 47,
+      "seed": 225773,
+      "lines_cleared": 685,
+      "pieces_placed": 1744,
+      "elapsed_time": 16.066364288330078,
+      "efficiency": 0.3927752293577982,
+      "timeout": false
+    },
+    {
+      "game_id": 49,
+      "seed": 352945,
+      "lines_cleared": 464,
+      "pieces_placed": 1201,
+      "elapsed_time": 11.146023988723755,
+      "efficiency": 0.38634471273938387,
+      "timeout": false
+    },
+    {
+      "game_id": 54,
+      "seed": 376418,
+      "lines_cleared": 353,
+      "pieces_placed": 909,
+      "elapsed_time": 8.35478925704956,
+      "efficiency": 0.38833883388338836,
+      "timeout": false
+    },
+    {
+      "game_id": 52,
+      "seed": 398383,
+      "lines_cleared": 506,
+      "pieces_placed": 1296,
+      "elapsed_time": 11.879051208496094,
+      "efficiency": 0.3904320987654321,
+      "timeout": false
+    },
+    {
+      "game_id": 42,
+      "seed": 732053,
+      "lines_cleared": 1652,
+      "pieces_placed": 4154,
+      "elapsed_time": 38.89315462112427,
+      "efficiency": 0.39768897448242657,
+      "timeout": false
+    },
+    {
+      "game_id": 57,
+      "seed": 633053,
+      "lines_cleared": 144,
+      "pieces_placed": 394,
+      "elapsed_time": 3.6392946243286133,
+      "efficiency": 0.36548223350253806,
+      "timeout": false
+    },
+    {
+      "game_id": 53,
+      "seed": 101415,
+      "lines_cleared": 609,
+      "pieces_placed": 1558,
+      "elapsed_time": 13.882673263549805,
+      "efficiency": 0.3908857509627728,
+      "timeout": false
+    },
+    {
+      "game_id": 61,
+      "seed": 765180,
+      "lines_cleared": 141,
+      "pieces_placed": 384,
+      "elapsed_time": 3.4491372108459473,
+      "efficiency": 0.3671875,
+      "timeout": false
+    },
+    {
+      "game_id": 31,
+      "seed": 439899,
+      "lines_cleared": 2720,
+      "pieces_placed": 6830,
+      "elapsed_time": 63.4890022277832,
+      "efficiency": 0.39824304538799415,
+      "timeout": false
+    },
+    {
+      "game_id": 55,
+      "seed": 888663,
+      "lines_cleared": 649,
+      "pieces_placed": 1654,
+      "elapsed_time": 15.374545097351074,
+      "efficiency": 0.39238210399032647,
+      "timeout": false
+    },
+    {
+      "game_id": 28,
+      "seed": 681454,
+      "lines_cleared": 3199,
+      "pieces_placed": 8000,
+      "elapsed_time": 75.30307126045227,
+      "efficiency": 0.399875,
+      "timeout": false
+    },
+    {
+      "game_id": 59,
+      "seed": 846336,
+      "lines_cleared": 492,
+      "pieces_placed": 1264,
+      "elapsed_time": 12.251823902130127,
+      "efficiency": 0.38924050632911394,
+      "timeout": false
+    },
+    {
+      "game_id": 63,
+      "seed": 562276,
+      "lines_cleared": 277,
+      "pieces_placed": 718,
+      "elapsed_time": 6.645030498504639,
+      "efficiency": 0.38579387186629527,
+      "timeout": false
+    },
+    {
+      "game_id": 65,
+      "seed": 967097,
+      "lines_cleared": 153,
+      "pieces_placed": 418,
+      "elapsed_time": 3.676105260848999,
+      "efficiency": 0.3660287081339713,
+      "timeout": false
+    },
+    {
+      "game_id": 62,
+      "seed": 481742,
+      "lines_cleared": 423,
+      "pieces_placed": 1088,
+      "elapsed_time": 10.44132947921753,
+      "efficiency": 0.38878676470588236,
+      "timeout": false
+    },
+    {
+      "game_id": 66,
+      "seed": 396923,
+      "lines_cleared": 240,
+      "pieces_placed": 629,
+      "elapsed_time": 5.733430624008179,
+      "efficiency": 0.3815580286168522,
+      "timeout": false
+    },
+    {
+      "game_id": 64,
+      "seed": 130890,
+      "lines_cleared": 454,
+      "pieces_placed": 1160,
+      "elapsed_time": 11.297285318374634,
+      "efficiency": 0.3913793103448276,
+      "timeout": false
+    },
+    {
+      "game_id": 48,
+      "seed": 800582,
+      "lines_cleared": 1792,
+      "pieces_placed": 4515,
+      "elapsed_time": 42.484822511672974,
+      "efficiency": 0.39689922480620154,
+      "timeout": false
+    },
+    {
+      "game_id": 69,
+      "seed": 307420,
+      "lines_cleared": 133,
+      "pieces_placed": 361,
+      "elapsed_time": 3.516270875930786,
+      "efficiency": 0.3684210526315789,
+      "timeout": false
+    },
+    {
+      "game_id": 71,
+      "seed": 659177,
+      "lines_cleared": 94,
+      "pieces_placed": 267,
+      "elapsed_time": 2.4298226833343506,
+      "efficiency": 0.352059925093633,
+      "timeout": false
+    },
+    {
+      "game_id": 73,
+      "seed": 928464,
+      "lines_cleared": 156,
+      "pieces_placed": 418,
+      "elapsed_time": 3.970151901245117,
+      "efficiency": 0.37320574162679426,
+      "timeout": false
+    },
+    {
+      "game_id": 72,
+      "seed": 648565,
+      "lines_cleared": 184,
+      "pieces_placed": 489,
+      "elapsed_time": 4.72020697593689,
+      "efficiency": 0.37627811860940696,
+      "timeout": false
+    },
+    {
+      "game_id": 33,
+      "seed": 471030,
+      "lines_cleared": 3196,
+      "pieces_placed": 8000,
+      "elapsed_time": 76.16858792304993,
+      "efficiency": 0.3995,
+      "timeout": false
+    },
+    {
+      "game_id": 75,
+      "seed": 379202,
+      "lines_cleared": 217,
+      "pieces_placed": 576,
+      "elapsed_time": 5.0925538539886475,
+      "efficiency": 0.3767361111111111,
+      "timeout": false
+    },
+    {
+      "game_id": 70,
+      "seed": 869694,
+      "lines_cleared": 437,
+      "pieces_placed": 1120,
+      "elapsed_time": 10.725866317749023,
+      "efficiency": 0.39017857142857143,
+      "timeout": false
+    },
+    {
+      "game_id": 68,
+      "seed": 578857,
+      "lines_cleared": 633,
+      "pieces_placed": 1610,
+      "elapsed_time": 15.425730466842651,
+      "efficiency": 0.39316770186335404,
+      "timeout": false
+    },
+    {
+      "game_id": 78,
+      "seed": 738798,
+      "lines_cleared": 89,
+      "pieces_placed": 250,
+      "elapsed_time": 2.3522326946258545,
+      "efficiency": 0.356,
+      "timeout": false
+    },
+    {
+      "game_id": 67,
+      "seed": 82628,
+      "lines_cleared": 796,
+      "pieces_placed": 2015,
+      "elapsed_time": 19.15167737007141,
+      "efficiency": 0.39503722084367243,
+      "timeout": false
+    },
+    {
+      "game_id": 76,
+      "seed": 605398,
+      "lines_cleared": 338,
+      "pieces_placed": 876,
+      "elapsed_time": 8.375300168991089,
+      "efficiency": 0.3858447488584475,
+      "timeout": false
+    },
+    {
+      "game_id": 74,
+      "seed": 903566,
+      "lines_cleared": 746,
+      "pieces_placed": 1895,
+      "elapsed_time": 18.122294425964355,
+      "efficiency": 0.39366754617414246,
+      "timeout": false
+    },
+    {
+      "game_id": 77,
+      "seed": 201630,
+      "lines_cleared": 664,
+      "pieces_placed": 1691,
+      "elapsed_time": 15.865197896957397,
+      "efficiency": 0.39266706091070375,
+      "timeout": false
+    },
+    {
+      "game_id": 79,
+      "seed": 72934,
+      "lines_cleared": 569,
+      "pieces_placed": 1456,
+      "elapsed_time": 13.526488304138184,
+      "efficiency": 0.3907967032967033,
+      "timeout": false
+    },
+    {
+      "game_id": 58,
+      "seed": 277371,
+      "lines_cleared": 1954,
+      "pieces_placed": 4922,
+      "elapsed_time": 46.64347434043884,
+      "efficiency": 0.39699309223892726,
+      "timeout": false
+    },
+    {
+      "game_id": 45,
+      "seed": 291370,
+      "lines_cleared": 3080,
+      "pieces_placed": 7734,
+      "elapsed_time": 71.69856762886047,
+      "efficiency": 0.3982415309025084,
+      "timeout": false
+    },
+    {
+      "game_id": 82,
+      "seed": 238969,
+      "lines_cleared": 582,
+      "pieces_placed": 1485,
+      "elapsed_time": 14.226130485534668,
+      "efficiency": 0.39191919191919194,
+      "timeout": false
+    },
+    {
+      "game_id": 86,
+      "seed": 896866,
+      "lines_cleared": 176,
+      "pieces_placed": 477,
+      "elapsed_time": 4.452955961227417,
+      "efficiency": 0.3689727463312369,
+      "timeout": false
+    },
+    {
+      "game_id": 89,
+      "seed": 105908,
+      "lines_cleared": 207,
+      "pieces_placed": 551,
+      "elapsed_time": 5.240159511566162,
+      "efficiency": 0.37568058076225047,
+      "timeout": false
+    },
+    {
+      "game_id": 51,
+      "seed": 97252,
+      "lines_cleared": 3197,
+      "pieces_placed": 8000,
+      "elapsed_time": 75.12727451324463,
+      "efficiency": 0.399625,
+      "timeout": false
+    },
+    {
+      "game_id": 81,
+      "seed": 693385,
+      "lines_cleared": 1472,
+      "pieces_placed": 3709,
+      "elapsed_time": 35.04119682312012,
+      "efficiency": 0.3968724723645187,
+      "timeout": false
+    },
+    {
+      "game_id": 93,
+      "seed": 666564,
+      "lines_cleared": 64,
+      "pieces_placed": 199,
+      "elapsed_time": 1.7390086650848389,
+      "efficiency": 0.32160804020100503,
+      "timeout": false
+    },
+    {
+      "game_id": 56,
+      "seed": 360664,
+      "lines_cleared": 3199,
+      "pieces_placed": 8000,
+      "elapsed_time": 76.24879550933838,
+      "efficiency": 0.399875,
+      "timeout": false
+    },
+    {
+      "game_id": 60,
+      "seed": 45562,
+      "lines_cleared": 3196,
+      "pieces_placed": 8000,
+      "elapsed_time": 76.03849077224731,
+      "efficiency": 0.3995,
+      "timeout": false
+    },
+    {
+      "game_id": 83,
+      "seed": 810621,
+      "lines_cleared": 1946,
+      "pieces_placed": 4891,
+      "elapsed_time": 45.723182916641235,
+      "efficiency": 0.3978736454712738,
+      "timeout": false
+    },
+    {
+      "game_id": 80,
+      "seed": 48051,
+      "lines_cleared": 2057,
+      "pieces_placed": 5181,
+      "elapsed_time": 49.82863998413086,
+      "efficiency": 0.3970276008492569,
+      "timeout": false
+    },
+    {
+      "game_id": 92,
+      "seed": 475436,
+      "lines_cleared": 1034,
+      "pieces_placed": 2612,
+      "elapsed_time": 24.824421405792236,
+      "efficiency": 0.39586523736600304,
+      "timeout": false
+    },
+    {
+      "game_id": 90,
+      "seed": 398592,
+      "lines_cleared": 1469,
+      "pieces_placed": 3707,
+      "elapsed_time": 35.51435899734497,
+      "efficiency": 0.3962773131912598,
+      "timeout": false
+    },
+    {
+      "game_id": 91,
+      "seed": 291477,
+      "lines_cleared": 1392,
+      "pieces_placed": 3516,
+      "elapsed_time": 32.82169198989868,
+      "efficiency": 0.39590443686006827,
+      "timeout": false
+    },
+    {
+      "game_id": 94,
+      "seed": 874629,
+      "lines_cleared": 797,
+      "pieces_placed": 2026,
+      "elapsed_time": 18.756981134414673,
+      "efficiency": 0.393385982230997,
+      "timeout": false
+    },
+    {
+      "game_id": 88,
+      "seed": 908574,
+      "lines_cleared": 2194,
+      "pieces_placed": 5512,
+      "elapsed_time": 53.96672177314758,
+      "efficiency": 0.3980406386066763,
+      "timeout": false
+    },
+    {
+      "game_id": 98,
+      "seed": 372529,
+      "lines_cleared": 760,
+      "pieces_placed": 1937,
+      "elapsed_time": 20.703178644180298,
+      "efficiency": 0.39235931853381517,
+      "timeout": false
+    },
+    {
+      "game_id": 101,
+      "seed": 279947,
+      "lines_cleared": 881,
+      "pieces_placed": 2242,
+      "elapsed_time": 24.75765824317932,
+      "efficiency": 0.39295272078501337,
+      "timeout": false
+    },
+    {
+      "game_id": 84,
+      "seed": 303446,
+      "lines_cleared": 2770,
+      "pieces_placed": 6954,
+      "elapsed_time": 70.01465106010437,
+      "efficiency": 0.3983318953120506,
+      "timeout": false
+    },
+    {
+      "game_id": 87,
+      "seed": 244099,
+      "lines_cleared": 2593,
+      "pieces_placed": 6517,
+      "elapsed_time": 65.31638431549072,
+      "efficiency": 0.3978824612551788,
+      "timeout": false
+    },
+    {
+      "game_id": 99,
+      "seed": 219685,
+      "lines_cleared": 1265,
+      "pieces_placed": 3188,
+      "elapsed_time": 35.6935031414032,
+      "efficiency": 0.39680050188205773,
+      "timeout": false
+    },
+    {
+      "game_id": 107,
+      "seed": 638721,
+      "lines_cleared": 287,
+      "pieces_placed": 745,
+      "elapsed_time": 8.55637502670288,
+      "efficiency": 0.38523489932885907,
+      "timeout": false
+    },
+    {
+      "game_id": 100,
+      "seed": 702730,
+      "lines_cleared": 1300,
+      "pieces_placed": 3280,
+      "elapsed_time": 35.64090394973755,
+      "efficiency": 0.39634146341463417,
+      "timeout": false
+    },
+    {
+      "game_id": 85,
+      "seed": 83668,
+      "lines_cleared": 3197,
+      "pieces_placed": 8000,
+      "elapsed_time": 81.77110505104065,
+      "efficiency": 0.399625,
+      "timeout": false
+    },
+    {
+      "game_id": 102,
+      "seed": 735912,
+      "lines_cleared": 1391,
+      "pieces_placed": 3514,
+      "elapsed_time": 39.36864352226257,
+      "efficiency": 0.3958451906659078,
+      "timeout": false
+    },
+    {
+      "game_id": 108,
+      "seed": 665823,
+      "lines_cleared": 850,
+      "pieces_placed": 2158,
+      "elapsed_time": 23.530766248703003,
+      "efficiency": 0.3938832252085264,
+      "timeout": false
+    },
+    {
+      "game_id": 96,
+      "seed": 170556,
+      "lines_cleared": 2401,
+      "pieces_placed": 6036,
+      "elapsed_time": 66.75299286842346,
+      "efficiency": 0.39777998674618953,
+      "timeout": false
+    },
+    {
+      "game_id": 110,
+      "seed": 560087,
+      "lines_cleared": 1152,
+      "pieces_placed": 2909,
+      "elapsed_time": 32.37853240966797,
+      "efficiency": 0.39601237538673084,
+      "timeout": false
+    },
+    {
+      "game_id": 103,
+      "seed": 982154,
+      "lines_cleared": 1974,
+      "pieces_placed": 4963,
+      "elapsed_time": 55.20217227935791,
+      "efficiency": 0.39774330042313116,
+      "timeout": false
+    },
+    {
+      "game_id": 95,
+      "seed": 382555,
+      "lines_cleared": 3198,
+      "pieces_placed": 8000,
+      "elapsed_time": 86.18539762496948,
+      "efficiency": 0.39975,
+      "timeout": false
+    },
+    {
+      "game_id": 104,
+      "seed": 716752,
+      "lines_cleared": 2127,
+      "pieces_placed": 5356,
+      "elapsed_time": 59.70545411109924,
+      "efficiency": 0.39712471994025395,
+      "timeout": false
+    },
+    {
+      "game_id": 106,
+      "seed": 74871,
+      "lines_cleared": 1828,
+      "pieces_placed": 4606,
+      "elapsed_time": 52.63341021537781,
+      "efficiency": 0.396873643074251,
+      "timeout": false
+    },
+    {
+      "game_id": 97,
+      "seed": 388163,
+      "lines_cleared": 3071,
+      "pieces_placed": 7716,
+      "elapsed_time": 83.95014023780823,
+      "efficiency": 0.39800414722654226,
+      "timeout": false
+    },
+    {
+      "game_id": 116,
+      "seed": 283061,
+      "lines_cleared": 544,
+      "pieces_placed": 1399,
+      "elapsed_time": 15.855091333389282,
+      "efficiency": 0.3888491779842745,
+      "timeout": false
+    },
+    {
+      "game_id": 112,
+      "seed": 256703,
+      "lines_cleared": 1544,
+      "pieces_placed": 3895,
+      "elapsed_time": 44.05934453010559,
+      "efficiency": 0.39640564826700897,
+      "timeout": false
+    },
+    {
+      "game_id": 109,
+      "seed": 179452,
+      "lines_cleared": 2068,
+      "pieces_placed": 5202,
+      "elapsed_time": 59.407691955566406,
+      "efficiency": 0.3975394079200308,
+      "timeout": false
+    },
+    {
+      "game_id": 120,
+      "seed": 584005,
+      "lines_cleared": 548,
+      "pieces_placed": 1400,
+      "elapsed_time": 15.84302282333374,
+      "efficiency": 0.3914285714285714,
+      "timeout": false
+    },
+    {
+      "game_id": 117,
+      "seed": 970343,
+      "lines_cleared": 855,
+      "pieces_placed": 2175,
+      "elapsed_time": 24.287981033325195,
+      "efficiency": 0.3931034482758621,
+      "timeout": false
+    },
+    {
+      "game_id": 115,
+      "seed": 397888,
+      "lines_cleared": 1395,
+      "pieces_placed": 3522,
+      "elapsed_time": 40.18854570388794,
+      "efficiency": 0.39608177172061326,
+      "timeout": false
+    },
+    {
+      "game_id": 125,
+      "seed": 805636,
+      "lines_cleared": 425,
+      "pieces_placed": 1103,
+      "elapsed_time": 12.190001010894775,
+      "efficiency": 0.38531278331822305,
+      "timeout": false
+    },
+    {
+      "game_id": 124,
+      "seed": 883795,
+      "lines_cleared": 695,
+      "pieces_placed": 1773,
+      "elapsed_time": 19.519317388534546,
+      "efficiency": 0.39199097574732095,
+      "timeout": false
+    },
+    {
+      "game_id": 118,
+      "seed": 671089,
+      "lines_cleared": 1313,
+      "pieces_placed": 3313,
+      "elapsed_time": 38.19820809364319,
+      "efficiency": 0.39631753697555083,
+      "timeout": false
+    },
+    {
+      "game_id": 105,
+      "seed": 679515,
+      "lines_cleared": 3197,
+      "pieces_placed": 8000,
+      "elapsed_time": 90.54610323905945,
+      "efficiency": 0.399625,
+      "timeout": false
+    },
+    {
+      "game_id": 122,
+      "seed": 717871,
+      "lines_cleared": 1051,
+      "pieces_placed": 2659,
+      "elapsed_time": 30.45575785636902,
+      "efficiency": 0.3952613764573148,
+      "timeout": false
+    },
+    {
+      "game_id": 126,
+      "seed": 813695,
+      "lines_cleared": 396,
+      "pieces_placed": 1022,
+      "elapsed_time": 11.630433320999146,
+      "efficiency": 0.38747553816046965,
+      "timeout": false
+    },
+    {
+      "game_id": 119,
+      "seed": 721591,
+      "lines_cleared": 1563,
+      "pieces_placed": 3943,
+      "elapsed_time": 45.02319598197937,
+      "efficiency": 0.3963986812072026,
+      "timeout": false
+    },
+    {
+      "game_id": 127,
+      "seed": 58656,
+      "lines_cleared": 607,
+      "pieces_placed": 1555,
+      "elapsed_time": 17.3570077419281,
+      "efficiency": 0.39035369774919615,
+      "timeout": false
+    },
+    {
+      "game_id": 123,
+      "seed": 340036,
+      "lines_cleared": 1134,
+      "pieces_placed": 2869,
+      "elapsed_time": 32.292121171951294,
+      "efficiency": 0.3952596723597072,
+      "timeout": false
+    },
+    {
+      "game_id": 111,
+      "seed": 764545,
+      "lines_cleared": 3197,
+      "pieces_placed": 8000,
+      "elapsed_time": 89.93224549293518,
+      "efficiency": 0.399625,
+      "timeout": false
+    },
+    {
+      "game_id": 128,
+      "seed": 240175,
+      "lines_cleared": 622,
+      "pieces_placed": 1591,
+      "elapsed_time": 17.510436058044434,
+      "efficiency": 0.39094908862350725,
+      "timeout": false
+    },
+    {
+      "game_id": 121,
+      "seed": 230284,
+      "lines_cleared": 1589,
+      "pieces_placed": 4007,
+      "elapsed_time": 44.91031289100647,
+      "efficiency": 0.39655602695283254,
+      "timeout": false
+    },
+    {
+      "game_id": 131,
+      "seed": 844152,
+      "lines_cleared": 620,
+      "pieces_placed": 1582,
+      "elapsed_time": 18.03217387199402,
+      "efficiency": 0.3919089759797724,
+      "timeout": false
+    },
+    {
+      "game_id": 139,
+      "seed": 594732,
+      "lines_cleared": 85,
+      "pieces_placed": 244,
+      "elapsed_time": 2.531794786453247,
+      "efficiency": 0.3483606557377049,
+      "timeout": false
+    },
+    {
+      "game_id": 113,
+      "seed": 171340,
+      "lines_cleared": 2859,
+      "pieces_placed": 7178,
+      "elapsed_time": 81.31421089172363,
+      "efficiency": 0.398300362217888,
+      "timeout": false
+    },
+    {
+      "game_id": 135,
+      "seed": 69404,
+      "lines_cleared": 424,
+      "pieces_placed": 1089,
+      "elapsed_time": 12.348170280456543,
+      "efficiency": 0.38934802571166205,
+      "timeout": false
+    },
+    {
+      "game_id": 137,
+      "seed": 957493,
+      "lines_cleared": 306,
+      "pieces_placed": 802,
+      "elapsed_time": 9.083943605422974,
+      "efficiency": 0.38154613466334164,
+      "timeout": false
+    },
+    {
+      "game_id": 134,
+      "seed": 280747,
+      "lines_cleared": 613,
+      "pieces_placed": 1560,
+      "elapsed_time": 17.9745512008667,
+      "efficiency": 0.39294871794871794,
+      "timeout": false
+    },
+    {
+      "game_id": 144,
+      "seed": 687278,
+      "lines_cleared": 2,
+      "pieces_placed": 39,
+      "elapsed_time": 0.34346485137939453,
+      "efficiency": 0.05128205128205128,
+      "timeout": false
+    },
+    {
+      "game_id": 136,
+      "seed": 221232,
+      "lines_cleared": 642,
+      "pieces_placed": 1630,
+      "elapsed_time": 18.658123254776,
+      "efficiency": 0.39386503067484663,
+      "timeout": false
+    },
+    {
+      "game_id": 142,
+      "seed": 329964,
+      "lines_cleared": 409,
+      "pieces_placed": 1060,
+      "elapsed_time": 11.56834626197815,
+      "efficiency": 0.3858490566037736,
+      "timeout": false
+    },
+    {
+      "game_id": 114,
+      "seed": 484715,
+      "lines_cleared": 3199,
+      "pieces_placed": 8000,
+      "elapsed_time": 90.26448965072632,
+      "efficiency": 0.399875,
+      "timeout": false
+    },
+    {
+      "game_id": 141,
+      "seed": 752788,
+      "lines_cleared": 586,
+      "pieces_placed": 1493,
+      "elapsed_time": 17.308061838150024,
+      "efficiency": 0.3924983255190891,
+      "timeout": false
+    },
+    {
+      "game_id": 143,
+      "seed": 222956,
+      "lines_cleared": 593,
+      "pieces_placed": 1512,
+      "elapsed_time": 16.890345096588135,
+      "efficiency": 0.3921957671957672,
+      "timeout": false
+    },
+    {
+      "game_id": 140,
+      "seed": 918939,
+      "lines_cleared": 1029,
+      "pieces_placed": 2605,
+      "elapsed_time": 28.255693435668945,
+      "efficiency": 0.39500959692898274,
+      "timeout": false
+    },
+    {
+      "game_id": 132,
+      "seed": 330777,
+      "lines_cleared": 1789,
+      "pieces_placed": 4502,
+      "elapsed_time": 50.516664028167725,
+      "efficiency": 0.3973789426921368,
+      "timeout": false
+    },
+    {
+      "game_id": 149,
+      "seed": 674080,
+      "lines_cleared": 667,
+      "pieces_placed": 1696,
+      "elapsed_time": 17.4501473903656,
+      "efficiency": 0.39327830188679247,
+      "timeout": false
+    },
+    {
+      "game_id": 151,
+      "seed": 149812,
+      "lines_cleared": 379,
+      "pieces_placed": 981,
+      "elapsed_time": 10.053644895553589,
+      "efficiency": 0.38634046890927626,
+      "timeout": false
+    },
+    {
+      "game_id": 153,
+      "seed": 146414,
+      "lines_cleared": 189,
+      "pieces_placed": 503,
+      "elapsed_time": 5.3252482414245605,
+      "efficiency": 0.3757455268389662,
+      "timeout": false
+    },
+    {
+      "game_id": 145,
+      "seed": 523482,
+      "lines_cleared": 1401,
+      "pieces_placed": 3532,
+      "elapsed_time": 38.16400361061096,
+      "efficiency": 0.39665911664779163,
+      "timeout": false
+    },
+    {
+      "game_id": 152,
+      "seed": 277747,
+      "lines_cleared": 449,
+      "pieces_placed": 1153,
+      "elapsed_time": 12.066802263259888,
+      "efficiency": 0.38941890719861233,
+      "timeout": false
+    },
+    {
+      "game_id": 129,
+      "seed": 861723,
+      "lines_cleared": 2447,
+      "pieces_placed": 6155,
+      "elapsed_time": 65.99782586097717,
+      "efficiency": 0.3975629569455727,
+      "timeout": false
+    },
+    {
+      "game_id": 130,
+      "seed": 33660,
+      "lines_cleared": 2399,
+      "pieces_placed": 6035,
+      "elapsed_time": 66.2263753414154,
+      "efficiency": 0.39751449875724937,
+      "timeout": false
+    },
+    {
+      "game_id": 148,
+      "seed": 958973,
+      "lines_cleared": 1233,
+      "pieces_placed": 3117,
+      "elapsed_time": 33.02077269554138,
+      "efficiency": 0.39557266602502406,
+      "timeout": false
+    },
+    {
+      "game_id": 159,
+      "seed": 783301,
+      "lines_cleared": 93,
+      "pieces_placed": 267,
+      "elapsed_time": 2.594517469406128,
+      "efficiency": 0.34831460674157305,
+      "timeout": false
+    },
+    {
+      "game_id": 160,
+      "seed": 612983,
+      "lines_cleared": 151,
+      "pieces_placed": 407,
+      "elapsed_time": 4.399240255355835,
+      "efficiency": 0.371007371007371,
+      "timeout": false
+    },
+    {
+      "game_id": 150,
+      "seed": 481142,
+      "lines_cleared": 1235,
+      "pieces_placed": 3116,
+      "elapsed_time": 32.98028373718262,
+      "efficiency": 0.39634146341463417,
+      "timeout": false
+    },
+    {
+      "game_id": 157,
+      "seed": 565159,
+      "lines_cleared": 395,
+      "pieces_placed": 1015,
+      "elapsed_time": 10.873362064361572,
+      "efficiency": 0.3891625615763547,
+      "timeout": false
+    },
+    {
+      "game_id": 155,
+      "seed": 781178,
+      "lines_cleared": 632,
+      "pieces_placed": 1607,
+      "elapsed_time": 17.23018479347229,
+      "efficiency": 0.39327940261356564,
+      "timeout": false
+    },
+    {
+      "game_id": 165,
+      "seed": 379581,
+      "lines_cleared": 555,
+      "pieces_placed": 1420,
+      "elapsed_time": 13.37416672706604,
+      "efficiency": 0.3908450704225352,
+      "timeout": false
+    },
+    {
+      "game_id": 133,
+      "seed": 420652,
+      "lines_cleared": 3197,
+      "pieces_placed": 8000,
+      "elapsed_time": 86.02024269104004,
+      "efficiency": 0.399625,
+      "timeout": false
+    },
+    {
+      "game_id": 147,
+      "seed": 927658,
+      "lines_cleared": 2284,
+      "pieces_placed": 5741,
+      "elapsed_time": 59.42500114440918,
+      "efficiency": 0.39784009754398186,
+      "timeout": false
+    },
+    {
+      "game_id": 161,
+      "seed": 449246,
+      "lines_cleared": 991,
+      "pieces_placed": 2491,
+      "elapsed_time": 24.669710874557495,
+      "efficiency": 0.3978321959052589,
+      "timeout": false
+    },
+    {
+      "game_id": 138,
+      "seed": 988713,
+      "lines_cleared": 3039,
+      "pieces_placed": 7628,
+      "elapsed_time": 80.42674136161804,
+      "efficiency": 0.39840062926061875,
+      "timeout": false
+    },
+    {
+      "game_id": 164,
+      "seed": 418802,
+      "lines_cleared": 868,
+      "pieces_placed": 2195,
+      "elapsed_time": 21.56902551651001,
+      "efficiency": 0.3954441913439636,
+      "timeout": false
+    },
+    {
+      "game_id": 146,
+      "seed": 414851,
+      "lines_cleared": 2559,
+      "pieces_placed": 6435,
+      "elapsed_time": 65.93701219558716,
+      "efficiency": 0.39766899766899766,
+      "timeout": false
+    },
+    {
+      "game_id": 163,
+      "seed": 611879,
+      "lines_cleared": 1213,
+      "pieces_placed": 3068,
+      "elapsed_time": 30.382521629333496,
+      "efficiency": 0.3953715775749674,
+      "timeout": false
+    },
+    {
+      "game_id": 158,
+      "seed": 275505,
+      "lines_cleared": 1558,
+      "pieces_placed": 3934,
+      "elapsed_time": 39.2821249961853,
+      "efficiency": 0.39603457041179463,
+      "timeout": false
+    },
+    {
+      "game_id": 169,
+      "seed": 517489,
+      "lines_cleared": 591,
+      "pieces_placed": 1510,
+      "elapsed_time": 13.737386226654053,
+      "efficiency": 0.3913907284768212,
+      "timeout": false
+    },
+    {
+      "game_id": 168,
+      "seed": 534278,
+      "lines_cleared": 1112,
+      "pieces_placed": 2813,
+      "elapsed_time": 26.584019899368286,
+      "efficiency": 0.3953075008887309,
+      "timeout": false
+    },
+    {
+      "game_id": 172,
+      "seed": 49406,
+      "lines_cleared": 1274,
+      "pieces_placed": 3226,
+      "elapsed_time": 29.846156358718872,
+      "efficiency": 0.3949163050216987,
+      "timeout": false
+    },
+    {
+      "game_id": 175,
+      "seed": 160266,
+      "lines_cleared": 1096,
+      "pieces_placed": 2772,
+      "elapsed_time": 25.898741245269775,
+      "efficiency": 0.3953823953823954,
+      "timeout": false
+    },
+    {
+      "game_id": 156,
+      "seed": 588638,
+      "lines_cleared": 2835,
+      "pieces_placed": 7113,
+      "elapsed_time": 68.85350561141968,
+      "efficiency": 0.39856600590468155,
+      "timeout": false
+    },
+    {
+      "game_id": 154,
+      "seed": 258608,
+      "lines_cleared": 3197,
+      "pieces_placed": 8000,
+      "elapsed_time": 77.90524196624756,
+      "efficiency": 0.399625,
+      "timeout": false
+    },
+    {
+      "game_id": 177,
+      "seed": 167754,
+      "lines_cleared": 453,
+      "pieces_placed": 1172,
+      "elapsed_time": 11.340698003768921,
+      "efficiency": 0.386518771331058,
+      "timeout": false
+    },
+    {
+      "game_id": 179,
+      "seed": 713537,
+      "lines_cleared": 309,
+      "pieces_placed": 796,
+      "elapsed_time": 7.701023817062378,
+      "efficiency": 0.38819095477386933,
+      "timeout": false
+    },
+    {
+      "game_id": 180,
+      "seed": 442667,
+      "lines_cleared": 153,
+      "pieces_placed": 410,
+      "elapsed_time": 3.974987745285034,
+      "efficiency": 0.37317073170731707,
+      "timeout": false
+    },
+    {
+      "game_id": 176,
+      "seed": 657925,
+      "lines_cleared": 1202,
+      "pieces_placed": 3039,
+      "elapsed_time": 28.93052649497986,
+      "efficiency": 0.39552484369858504,
+      "timeout": false
+    },
+    {
+      "game_id": 162,
+      "seed": 941436,
+      "lines_cleared": 3196,
+      "pieces_placed": 8000,
+      "elapsed_time": 77.20781898498535,
+      "efficiency": 0.3995,
+      "timeout": false
+    },
+    {
+      "game_id": 166,
+      "seed": 229975,
+      "lines_cleared": 2319,
+      "pieces_placed": 5832,
+      "elapsed_time": 56.43168783187866,
+      "efficiency": 0.3976337448559671,
+      "timeout": false
+    },
+    {
+      "game_id": 181,
+      "seed": 625381,
+      "lines_cleared": 443,
+      "pieces_placed": 1137,
+      "elapsed_time": 11.091579914093018,
+      "efficiency": 0.3896218117854002,
+      "timeout": false
+    },
+    {
+      "game_id": 185,
+      "seed": 624835,
+      "lines_cleared": 98,
+      "pieces_placed": 279,
+      "elapsed_time": 2.569990396499634,
+      "efficiency": 0.35125448028673834,
+      "timeout": false
+    },
+    {
+      "game_id": 183,
+      "seed": 403458,
+      "lines_cleared": 436,
+      "pieces_placed": 1116,
+      "elapsed_time": 10.774657726287842,
+      "efficiency": 0.3906810035842294,
+      "timeout": false
+    },
+    {
+      "game_id": 174,
+      "seed": 114976,
+      "lines_cleared": 2203,
+      "pieces_placed": 5546,
+      "elapsed_time": 53.62207078933716,
+      "efficiency": 0.3972232239451857,
+      "timeout": false
+    },
+    {
+      "game_id": 186,
+      "seed": 490786,
+      "lines_cleared": 423,
+      "pieces_placed": 1085,
+      "elapsed_time": 10.390076398849487,
+      "efficiency": 0.3898617511520737,
+      "timeout": false
+    },
+    {
+      "game_id": 184,
+      "seed": 400157,
+      "lines_cleared": 450,
+      "pieces_placed": 1149,
+      "elapsed_time": 11.264066219329834,
+      "efficiency": 0.391644908616188,
+      "timeout": false
+    },
+    {
+      "game_id": 173,
+      "seed": 902932,
+      "lines_cleared": 2383,
+      "pieces_placed": 5988,
+      "elapsed_time": 56.74638342857361,
+      "efficiency": 0.3979625918503674,
+      "timeout": false
+    },
+    {
+      "game_id": 167,
+      "seed": 145052,
+      "lines_cleared": 2910,
+      "pieces_placed": 7305,
+      "elapsed_time": 69.71313834190369,
+      "efficiency": 0.39835728952772076,
+      "timeout": false
+    },
+    {
+      "game_id": 188,
+      "seed": 263627,
+      "lines_cleared": 496,
+      "pieces_placed": 1271,
+      "elapsed_time": 11.96025824546814,
+      "efficiency": 0.3902439024390244,
+      "timeout": false
+    },
+    {
+      "game_id": 194,
+      "seed": 755732,
+      "lines_cleared": 65,
+      "pieces_placed": 188,
+      "elapsed_time": 1.7583236694335938,
+      "efficiency": 0.34574468085106386,
+      "timeout": false
+    },
+    {
+      "game_id": 178,
+      "seed": 830556,
+      "lines_cleared": 1397,
+      "pieces_placed": 3526,
+      "elapsed_time": 33.32460427284241,
+      "efficiency": 0.39619965967101534,
+      "timeout": false
+    },
+    {
+      "game_id": 191,
+      "seed": 988211,
+      "lines_cleared": 305,
+      "pieces_placed": 800,
+      "elapsed_time": 7.37067985534668,
+      "efficiency": 0.38125,
+      "timeout": false
+    },
+    {
+      "game_id": 190,
+      "seed": 902593,
+      "lines_cleared": 381,
+      "pieces_placed": 989,
+      "elapsed_time": 9.109771251678467,
+      "efficiency": 0.3852376137512639,
+      "timeout": false
+    },
+    {
+      "game_id": 196,
+      "seed": 714826,
+      "lines_cleared": 148,
+      "pieces_placed": 397,
+      "elapsed_time": 3.7209510803222656,
+      "efficiency": 0.37279596977329976,
+      "timeout": false
+    },
+    {
+      "game_id": 199,
+      "seed": 787353,
+      "lines_cleared": 52,
+      "pieces_placed": 162,
+      "elapsed_time": 1.300868272781372,
+      "efficiency": 0.32098765432098764,
+      "timeout": false
+    },
+    {
+      "game_id": 193,
+      "seed": 713329,
+      "lines_cleared": 373,
+      "pieces_placed": 962,
+      "elapsed_time": 9.235876560211182,
+      "efficiency": 0.3877338877338877,
+      "timeout": false
+    },
+    {
+      "game_id": 195,
+      "seed": 120117,
+      "lines_cleared": 350,
+      "pieces_placed": 907,
+      "elapsed_time": 8.4551522731781,
+      "efficiency": 0.38588754134509373,
+      "timeout": false
+    },
+    {
+      "game_id": 170,
+      "seed": 95326,
+      "lines_cleared": 3199,
+      "pieces_placed": 8000,
+      "elapsed_time": 76.79769802093506,
+      "efficiency": 0.399875,
+      "timeout": false
+    },
+    {
+      "game_id": 171,
+      "seed": 792496,
+      "lines_cleared": 3199,
+      "pieces_placed": 8000,
+      "elapsed_time": 76.08552145957947,
+      "efficiency": 0.399875,
+      "timeout": false
+    },
+    {
+      "game_id": 182,
+      "seed": 66614,
+      "lines_cleared": 1409,
+      "pieces_placed": 3550,
+      "elapsed_time": 33.63761520385742,
+      "efficiency": 0.3969014084507042,
+      "timeout": false
+    },
+    {
+      "game_id": 197,
+      "seed": 927768,
+      "lines_cleared": 532,
+      "pieces_placed": 1360,
+      "elapsed_time": 12.276243925094604,
+      "efficiency": 0.3911764705882353,
+      "timeout": false
+    },
+    {
+      "game_id": 189,
+      "seed": 580100,
+      "lines_cleared": 1279,
+      "pieces_placed": 3233,
+      "elapsed_time": 29.955639600753784,
+      "efficiency": 0.39560779461800183,
+      "timeout": false
+    },
+    {
+      "game_id": 192,
+      "seed": 12039,
+      "lines_cleared": 1139,
+      "pieces_placed": 2873,
+      "elapsed_time": 26.115254163742065,
+      "efficiency": 0.39644970414201186,
+      "timeout": false
+    },
+    {
+      "game_id": 187,
+      "seed": 554817,
+      "lines_cleared": 1923,
+      "pieces_placed": 4839,
+      "elapsed_time": 43.86246585845947,
+      "efficiency": 0.3973961562306262,
+      "timeout": false
+    },
+    {
+      "game_id": 198,
+      "seed": 563055,
+      "lines_cleared": 3197,
+      "pieces_placed": 8000,
+      "elapsed_time": 59.55529856681824,
+      "efficiency": 0.399625,
+      "timeout": false
+    }
+  ],
+  "analysis": {
+    "total_games": 200,
+    "successful_games": 200,
+    "timeout_count": 0,
+    "success_rate": 100.0,
+    "lines_stats": {
+      "mean": 1138.99,
+      "median": 753.0,
+      "stdev": 962.0108127872566,
+      "min": 2,
+      "max": 3199,
+      "q1": 423.0,
+      "q3": 1636.5
+    },
+    "efficiency_stats": {
+      "mean": 0.38679521455556126,
+      "stdev": 0.028774336686895198
+    },
+    "time_stats": {
+      "mean": 28.84332589507103,
+      "total": 5768.665179014206
+    },
+    "achievement_rates": {
+      "500+": 66.5,
+      "1000+": 43.5,
+      "1500+": 28.999999999999996,
+      "2000+": 19.5,
+      "2500+": 13.5,
+      "3000+": 9.5,
+      "3500+": 0.0,
+      "4000+": 0.0
+    },
+    "stability_coefficient": 0.8446174354360061
+  },
+  "timestamp": "20250617_213956"
+}

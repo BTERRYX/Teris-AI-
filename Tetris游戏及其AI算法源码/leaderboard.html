@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏排行榜</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+    <!-- 导航栏 -->
+    <nav class="bg-gray-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-primary">俄罗斯方块</span>
+                </div>
+                <div class="flex items-center">
+                    <button id="start-game-btn" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md mr-3 transition duration-300">
+                        <i class="fa fa-gamepad mr-2"></i>开始游戏
+                    </button>
+                    <button id="logout-btn" class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md transition duration-300">
+                        <i class="fa fa-sign-out mr-2"></i>退出登录
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-8">
+        <div class="max-w-4xl w-full">
+            <div class="text-center mb-8">
+                <h1 class="text-[clamp(2rem,5vw,3rem)] font-bold text-shadow mb-2">游戏排行榜</h1>
+                <p class="text-gray-400">皇帝轮流坐，明天到我家!</p>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden mb-8">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-xl font-bold">全球排名</h2>
+                        <div class="flex space-x-2">
+                            <button class="bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded text-sm transition duration-300">
+                                <i class="fa fa-calendar-o mr-1"></i>总榜
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-700">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">排名</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">玩家</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">分数</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">段位</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboard-body" class="divide-y divide-gray-700">
+                                <!-- 排行榜数据将通过JavaScript动态填充 -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="user-stats" class="bg-gray-800 rounded-xl shadow-lg p-6 mb-8 hidden">
+                <h2 class="text-xl font-bold mb-4">你的游戏数据</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-gray-700 rounded-lg p-4 card-hover">
+                        <div class="text-4xl font-bold mb-1 text-primary" id="user-rank">-</div>
+                        <div class="text-sm text-gray-400">全球排名</div>
+                    </div>
+                    <div class="bg-gray-700 rounded-lg p-4 card-hover">
+                        <div class="text-4xl font-bold mb-1 text-primary" id="user-high-score">-</div>
+                        <div class="text-sm text-gray-400">最高分</div>
+                    </div>
+                    <div class="bg-gray-700 rounded-lg p-4 card-hover">
+                        <div class="text-4xl font-bold mb-1 text-primary" id="user-title">
+                            <span class="inline-block transform transition-transform hover:scale-110" id="title-text">-</span>
+                        </div>
+                        <div class="text-sm text-gray-400">身份</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-gray-400 text-sm">© 2025 俄罗斯方块游戏</span>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fa fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fa fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fa fa-envelope text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 开始游戏提示弹窗 -->
+    <div id="start-game-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-800 rounded-xl p-8 max-w-md w-full mx-4 transform transition-all">
+            <div class="text-right mb-4">
+                <button id="close-modal-btn" class="text-gray-400 hover:text-white text-2xl">&times;</button>
+            </div>
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-white mb-2">游戏中心提醒</h3>
+                <p class="text-gray-300 mb-6" id="modal-message">开始游戏前草民要先给皇上请安</p>
+                <button id="start-game-confirm" class="bg-primary hover:bg-primary/90 text-white font-bold py-2 px-6 rounded-full transition-colors shadow-lg hover:shadow-primary/30">
+                    奴才给皇上请安了
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', async function() {
+            // 检查用户是否已登录
+            const userId = localStorage.getItem('user_id');
+            if (!userId) {
+                alert('请先登录');
+                window.location.href = '/';
+                return;
+            }
+
+            // 获取排行榜数据
+            try {
+                const response = await fetch('/leaderboard');
+                if (!response.ok) {
+                    throw new Error('获取排行榜数据失败');
+                }
+                
+                const data = await response.json();
+                renderLeaderboard(data.leaderboard);
+                
+                // 获取用户个人数据
+                const userDataResponse = await fetch(`/user/${userId}/stats`);
+                if (userDataResponse.ok) {
+                    const userData = await userDataResponse.json();
+                    renderUserStats(userData);
+                    document.getElementById('user-stats').classList.remove('hidden');
+                    
+                    // 只添加一次开始游戏按钮的事件监听器
+                    setupStartGameButton(userData);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('加载数据失败，请稍后重试');
+            }
+
+            // 退出登录按钮点击事件
+            document.getElementById('logout-btn').addEventListener('click', function() {
+                localStorage.removeItem('user_id');
+                window.location.href = '/';
+            });
+        });
+
+        // 渲染排行榜数据
+        function renderLeaderboard(entries) {
+            const leaderboardBody = document.getElementById('leaderboard-body');
+            leaderboardBody.innerHTML = '';
+            
+            entries.forEach((entry, index) => {
+                const row = document.createElement('tr');
+                row.className = index < 3 ? 'bg-yellow-900/30' : 'hover:bg-gray-700/50 transition duration-300';
+                
+                // 排名样式
+                let rankClass = 'font-bold';
+                let rankIcon = '';
+                if (index === 0) {
+                    rankClass += ' text-yellow-400';
+                    rankIcon = '<i class="fa fa-trophy text-yellow-400 mr-2"></i>';
+                } else if (index === 1) {
+                    rankClass += ' text-gray-300';
+                    rankIcon = '<i class="fa fa-trophy text-gray-300 mr-2"></i>';
+                } else if (index === 2) {
+                    rankClass += ' text-amber-600';
+                    rankIcon = '<i class="fa fa-trophy text-amber-600 mr-2"></i>';
+                }
+                
+                // 根据排名设置称谓
+                let title = index === 0 ? '皇上' : '草民';
+                
+                row.innerHTML = `
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="${rankClass}">${rankIcon}${index + 1}</div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <div class="h-8 w-8 rounded-full bg-gray-600 flex items-center justify-center mr-3">
+                                ${entry.username.charAt(0).toUpperCase()}
+                            </div>
+                            <div>
+                                <div class="font-medium">${entry.username}</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap font-medium">${entry.score}</td>
+                    <td class="px-6 py-4 whitespace-nowrap">${title}</td> <!-- 添加称谓列 -->
+                `;
+                
+                leaderboardBody.appendChild(row);
+            });
+        }
+
+        // 渲染用户个人数据
+        function renderUserStats(userData) {
+            document.getElementById('user-rank').textContent = userData.rank;
+            document.getElementById('user-high-score').textContent = userData.high_score;
+            document.getElementById('title-text').textContent = userData.title;
+        }
+
+        // 独立函数设置开始游戏按钮逻辑
+        function setupStartGameButton(userData) {
+            const startBtn = document.getElementById('start-game-btn');
+            const startModal = document.getElementById('start-game-modal');
+            const confirmBtn = document.getElementById('start-game-confirm');
+            const closeBtn = document.getElementById('close-modal-btn');
+            const modalMessage = document.getElementById('modal-message');
+            
+            // 开始游戏按钮点击事件
+            startBtn.addEventListener('click', function() {
+                if (userData.rank === 1) {
+                    // 排名为1显示特定弹窗
+                    modalMessage.textContent = '皇上万岁万岁万万岁';
+                    confirmBtn.textContent = '平身';
+                    startModal.classList.remove('hidden');
+                } else {
+                    // 其他排名显示原弹窗
+                    modalMessage.textContent = '开始游戏前草民要先给皇上请安';
+                    confirmBtn.textContent = '奴才给皇上请安了';
+                    startModal.classList.remove('hidden');
+                }
+            });
+            
+            // 确认按钮点击事件
+            confirmBtn.addEventListener('click', function() {
+                // 隐藏模态框
+                startModal.classList.add('hidden');
+                // 跳转到游戏页面
+                window.location.href = '/index';
+            });
+            
+            // 关闭按钮点击事件
+            closeBtn.addEventListener('click', function() {
+                startModal.classList.add('hidden');
+            });
+            
+            // 点击模态框外部也可以关闭
+            startModal.addEventListener('click', function(e) {
+                if (e.target === startModal) {
+                    startModal.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
